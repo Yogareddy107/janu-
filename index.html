@@ -7,7 +7,7 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="theme-color" content="#F26B38">
 
-	<title>Happy Birthday | Siddhant Sharma</title>
+	<title>Happy Birthday </title>
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -16,21 +16,44 @@
 	<link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./images/">
 </head>
 <body>
+
+
+
+
+	<!-- Background Music -->
+	<audio id="bg-music" loop>
+		<source src="./Aradhya.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!-- Display the title of the music -->
+	<div id="js/Aradhya.mp3" style="text-align: center; font-size: 1.5rem; margin-top: 20px;">
+		<b>Playing: Aradhya</b>
+	</div>
+
+
+
 	<br> <br> <br> <br> <br>
 	<div id="card">
+		<div id="card" onclick="playMusic()" style="cursor: pointer;">
 		<div id="card-inside">
 			<div class="wrap">
 				<center><p class="animated infinite wobble"><b><u>Happy Birthday!</b></u></p><center>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco &nbsp;<i class="em-svg em-blush"></i></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				 </p><p class="signed"><u>Made With </b><b> <i class="em-svg em-heart"></i></p>
+				<p> On your special day, I just wanted to let you know how much you mean to me. Even though we don’t talk regularly, you are still so important to me, and you’ll always have a special place in my heart. 🫀
+
+		   				 I'm so lucky to have you as a friend ❌ Best Buddy🫂! &nbsp;<i class="em-svg em-blush"></i></p>
+				<p>May this year bring you closer to your dreams, fill your days with endless laughter, and surround you with love. Here's to many more amazing moments and adventures together.
+				Wishing you a birthday filled with happiness, fun, and all the things you love most! 🥳🎈
+					
+				</p><p class="signed"><u>Happy Birthday, Papa! 🎉💖🎂 </b><b> <i class=""></i></p>
 			</div>
 		</div>
 		<div id="card-front">
 			<div class="wrap">
-				<h1 class="animated infinite swing">Happy Birthday Love</h1>
+				<h1 class="animated infinite swing">Happy Birthday Papa</h1>
 				<div class="cake_and_velas">
 					<div class="velas">
 						<div class="fuego"></div>
@@ -69,12 +92,31 @@
 			<div class="card-front_inside">
 				<br> <br> <br>
 				<div class="polaroid">
-					<div class="img" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/608/881/original/heart-flat-icon-vector.jpg')"></div>
+					<div class="img" style="background-image: url('./images/WhatsApp\ Image\ 2024-10-03\ at\ 1.45.40\ PM.jpeg')"></div>
+				
 				</div>
 				<div class="shadow"></div>
 			</div>
 		</div>
 	</div>
+	</div>
 	<script  src="js/index.js"></script>
+
+	<script>
+		// Function to play music when the card is clicked
+		function playMusic() {
+			var music = document.getElementById('bg-music');
+			
+			// If music is not playing, play it
+			if (music.paused) {
+				music.play();
+			} else {
+				// If music is already playing, pause it
+				music.pause();
+			}
+		}
+	</script>
 </body>
 </html>
+
+

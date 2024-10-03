@@ -86,7 +86,7 @@ p:first-child {
 p.signed {
   margin-top: 1.5em;
   text-align: center;
-font-family: 'Indie Flower', cursive;
+font-family: 'Indie Flower';
   font-size: 1.5em;
 }
 
@@ -409,6 +409,8 @@ font-family: 'Lobster', cursive;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
+
+
 
 @-webkit-keyframes fade-in {
   from {
